@@ -22,6 +22,21 @@
     [super viewDidLoad];
     self.title = @"Tip Calculator";
     [self updateValues];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int intValue = [defaults integerForKey:@"defaultTipValue"];
+
+    if (intValue == 15) {
+        self.tipControl.selectedSegmentIndex = 0;
+    }
+    else if (intValue == 20) {
+        self.tipControl.selectedSegmentIndex = 1;
+    }
+    else {
+        self.tipControl.selectedSegmentIndex = 2;
+    }
+    
+    [self updateValues];
 }
 
 
@@ -49,32 +64,6 @@
     // Update the UI
     self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
     self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    int intValue = [defaults integerForKey:@"defaultTipValue"];
-    NSLog(@"%i", intValue);
-    if (intValue == 15) {
-        self.tipControl.selectedSegmentIndex = 0;
-    }
-    else if (intValue == 20) {
-        self.tipControl.selectedSegmentIndex = 1;
-    }
-    else {
-        self.tipControl.selectedSegmentIndex = 2;
-    }
-    
-    [self updateValues];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    NSArray *tipValues = @[@(15), @(20), @(25)];
-    int tipAmount = [tipValues[self.tipControl.selectedSegmentIndex] intValue];
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:tipAmount forKey:@"defaultTipValue"];
-    [defaults synchronize];
 }
 
 @end

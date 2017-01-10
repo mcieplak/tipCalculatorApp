@@ -39,7 +39,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     int intValue = [defaults integerForKey:@"defaultTipValue"];
-    NSLog(@"%i", intValue);
+
     if (intValue == 15) {
         self.defaultTipControl.selectedSegmentIndex = 0;
     }
