@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		D8027E1C1E248C55008C4D60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8027E1B1E248C55008C4D60 /* main.m */; };
 		D8027E1F1E248C55008C4D60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8027E1E1E248C55008C4D60 /* AppDelegate.m */; };
-		D8027E221E248C55008C4D60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8027E211E248C55008C4D60 /* ViewController.m */; };
+		D8027E221E248C55008C4D60 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8027E211E248C55008C4D60 /* TipViewController.m */; };
 		D8027E251E248C55008C4D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8027E231E248C55008C4D60 /* Main.storyboard */; };
 		D8027E271E248C55008C4D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8027E261E248C55008C4D60 /* Assets.xcassets */; };
 		D8027E2A1E248C55008C4D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8027E281E248C55008C4D60 /* LaunchScreen.storyboard */; };
+		D8027E331E249E73008C4D60 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8027E321E249E73008C4D60 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		D8027E1B1E248C55008C4D60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8027E1D1E248C55008C4D60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8027E1E1E248C55008C4D60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D8027E201E248C55008C4D60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D8027E211E248C55008C4D60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8027E201E248C55008C4D60 /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		D8027E211E248C55008C4D60 /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		D8027E241E248C55008C4D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8027E261E248C55008C4D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8027E291E248C55008C4D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8027E2B1E248C55008C4D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8027E311E249E73008C4D60 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
+		D8027E321E249E73008C4D60 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,12 @@
 		D8027E191E248C55008C4D60 /* tipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				D8027E311E249E73008C4D60 /* SettingsViewController.h */,
+				D8027E321E249E73008C4D60 /* SettingsViewController.m */,
 				D8027E1D1E248C55008C4D60 /* AppDelegate.h */,
 				D8027E1E1E248C55008C4D60 /* AppDelegate.m */,
-				D8027E201E248C55008C4D60 /* ViewController.h */,
-				D8027E211E248C55008C4D60 /* ViewController.m */,
+				D8027E201E248C55008C4D60 /* TipViewController.h */,
+				D8027E211E248C55008C4D60 /* TipViewController.m */,
 				D8027E231E248C55008C4D60 /* Main.storyboard */,
 				D8027E261E248C55008C4D60 /* Assets.xcassets */,
 				D8027E281E248C55008C4D60 /* LaunchScreen.storyboard */,
@@ -150,9 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8027E221E248C55008C4D60 /* ViewController.m in Sources */,
+				D8027E221E248C55008C4D60 /* TipViewController.m in Sources */,
 				D8027E1F1E248C55008C4D60 /* AppDelegate.m in Sources */,
 				D8027E1C1E248C55008C4D60 /* main.m in Sources */,
+				D8027E331E249E73008C4D60 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
